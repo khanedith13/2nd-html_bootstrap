@@ -15,17 +15,17 @@
 <body>
 
     <!-- Skip Navigation Link -->
-    <a href="#main-content">Skip to main content</a>
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 
     <!-- Header Section -->
     <header>
-        <div class="navbar navbar-expand-lg navbar-primary bg-primary border-bottom shadow fixed-top">
+        <div class="navbar navbar-expand-lg navbar-primary bg-dark bg-gradient border-bottom shadow fixed-top">
             <div class="container-fluid px-3 px-md-4">
                 <div class="col">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand fw-bold fs-5" href="#main-content">
+                    <a class="navbar-brand fw-bold text-white fs-5" href="#main-content">
                         <img src="logos/techHub-logo.png" width="32" alt="TechHub Store Logo" class="me-2">
                         TechHub Store
                     </a>
@@ -33,11 +33,11 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <nav>
                         <ul class="navbar-nav ms-auto  gap-2">
-                            <li class="nav-item"><a class="nav-link border-secondary border-bottom rounded-pill fw-bold" href="#main-content">Home</a></li>
-                            <li class="nav-item"><a class="nav-link border-secondary border-bottom rounded-pill fw-bold" href="#featured-products">Products</a></li>
-                            <li class="nav-item"><a class="nav-link border-secondary border-bottom rounded-pill fw-bold" href="#categories-section">Categories</a></li>
-                            <li class="nav-item"><a class="nav-link border-secondary border-bottom rounded-pill fw-bold" href="#footer-info">About</a></li>
-                            <li class="nav-item"><a class="nav-link border-secondary border-bottom rounded-pill fw-bold" href="#newsletter-section">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link text-white fw-bold" href="#main-content">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#featured-products">Products</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#categories-section">Categories</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#footer-info">About</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#newsletter-section">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -59,7 +59,7 @@
 
     <!-- Hero Section -->
     <section id="hero-section" class="vh-100 position-relative overflow-hidden d-flex align-items-center justify-content-center text-center text-white">
-        <img src="logos/favIcon.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rounded-4" alt="Hero Background">
+        <img src="logos/favIcon.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rounded-bottom-4" alt="Hero Background">
         <div class="position-relative bg-dark bg-opacity-50 w-100 h-100 d-flex align-items-center justify-content-center rounded-4">
             <div>
                 <h1 class="display-3 fw-bold mb-3">Welcome to TechHub Store</h1>
@@ -75,28 +75,28 @@
     <section id="categories-section" class="py-5">
         <div class="container">
             <h2 class="display-6 text-center fw-bold mb-4 text-black">Shop by Category</h2>
-            <div class="d-flex flex-nowrap gap-2 justify-content-center overflow-x-auto bg-secondary p-3 rounded">
-                <div class="bg-primary border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
+            <div class="d-flex flex-nowrap gap-2 justify-content-center overflow-x-fix p-3 rounded">
+                <div class="border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
                     <i class="bi bi-laptop fs-1 text-dark"></i>
                     <h5 class="fs-6 text-black">Laptops & Computers</h5>
                 </div>
-                <div class="bg-primary border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
+                <div class="border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
                     <i class="bi bi-phone fs-1 text-dark"></i>
                     <h5 class="fs-6 text-black">Smartphones & Tablets</h5>
                 </div>
-                <div class="bg-primary border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
+                <div class="border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
                     <i class="bi bi-headphones fs-1 text-dark"></i>
                     <h5 class="fs-6 text-black">Audio & Headphones</h5>
                 </div>
-                <div class="bg-primary border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
+                <div class="border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
                     <i class="bi bi-camera fs-1 text-dark"></i>
                     <h5 class="fs-6 text-black">Cameras & Photography</h5>
                 </div>
-                <div class="bg-primary border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
+                <div class="border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
                     <i class="bi bi-controller fs-1 text-dark"></i>
                     <h5 class="fs-6 text-black">Gaming & Consoles</h5>
                 </div>
-                <div class="bg-primary border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
+                <div class="border border-primary text-center shadow-sm p-1 w-10 card rounded-3">
                     <i class="bi bi-keyboard fs-1 text-dark"></i>
                     <h5 class="fs-6 text-black">Accessories & More</h5>
                 </div>
@@ -105,14 +105,14 @@
     </section>
 
         <!-- Featured Products Section -->
-        <section id="featured-products" class="py-5 bg-secondary rounded-3">
+        <section id="featured-products" class="py-5 bg-dark">
             <div class="container">
                 <h2 class="display-6 text-center fw-bold mb-5 text-white">Featured Products</h2>
                 <div class="row g-4">
 
                     <!-- Product 1 -->
                     <article class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="product-card card bg-dark h-100 border blackborder border-black">                        
+                        <div class="product-card card bg-dark h-100 border border-light">                        
                             <div class="ratio ratio-4x3">
                                 <img src="featured-products/wireLess-headPhones-pro.png" alt="Wireless Headphones Pro" class="card-img-top img-fluid h-200 object-fit-cover">
                             </div>
@@ -130,7 +130,7 @@
 
                     <!-- Product 2 -->
                     <article class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="product-card card bg-dark h-100 border blackborder border-black">                        
+                        <div class="product-card card bg-dark h-100 border border-light">                        
                             <div class="ratio ratio-4x3">
                                 <img src="featured-products/ultraHd-smartTv-55inch.png" alt="Ultra HD Smart TV 55" class="card-img-top img-fluid h-200 object-fit-cover">
                             </div>
@@ -148,7 +148,7 @@
 
                     <!-- Product 3 -->
                     <article class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="product-card card bg-dark h-100 border blackborder border-black">                        
+                        <div class="product-card card bg-dark h-100 border border-light">                        
                             <div class="ratio ratio-4x3">
                                 <img src="featured-products/gamingLaptop-elite.png" alt="Gaming Laptop Elite" class="card-img-top img-fluid h-200 object-fit-cover">
                             </div>
@@ -166,7 +166,7 @@
 
                     <!-- Product 4 -->
                     <article class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="product-card card bg-dark h-100 border blackborder border-black">                        
+                        <div class="product-card card bg-dark h-100 border border-light">                        
                             <div class="ratio ratio-4x3">
                                 <img src="featured-products/smartPhone-X-pro.png" alt="Smartphone X Pro" class="card-img-top img-fluid h-200 object-fit-cover">
                             </div>
@@ -184,7 +184,7 @@
 
                     <!-- Product 5 -->
                     <article class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="product-card card bg-dark h-100 border blackborder border-black">                        
+                        <div class="product-card card bg-dark h-100 border border-light">                        
                             <div class="ratio ratio-4x3">
                                 <img src="featured-products/smartWatch-ultra.png" alt="Smart Watch Ultra" class="card-img-top img-fluid h-200 object-fit-cover">
                             </div>
@@ -202,7 +202,7 @@
 
                     <!-- Product 6 -->
                     <article class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="product-card card bg-dark h-100 border blackborder border-black">                        
+                        <div class="product-card card bg-dark h-100 border border-light">                        
                             <div class="ratio ratio-4x3">
                                 <img src="featured-products/anc-earbuds.png" alt="Noise Canceling Earbuds" class="card-img-top img-fluid h-200 object-fit-cover">
                             </div>
@@ -220,7 +220,7 @@
 
                     <!-- Product 7 -->
                     <article class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="product-card card bg-dark h-100 border blackborder border-black">                        
+                        <div class="product-card card bg-dark h-100 border border-light">                        
                             <div class="ratio ratio-4x3">
                             <img src="featured-products/tabletPro-12.png" alt="Tablet Pro 12" class="card-img-top img-fluid h-200 object-fit-cover">
                             </div>
@@ -238,7 +238,7 @@
 
                     <!-- Product 8 -->
                     <article class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="product-card card bg-dark h-100 border blackborder border-black">                        
+                        <div class="product-card card bg-dark h-100 border border-light">                        
                             <div class="ratio ratio-4x3">
                                 <img src="featured-products/rgbGaming-keyboard.png" alt="Mechanical Gaming Keyboard" class="card-img-top img-fluid h-200 object-fit-cover">
                             </div>
